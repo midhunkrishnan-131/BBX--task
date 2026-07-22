@@ -1,11 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>student dashboard</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/student-dashboard.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="logo">
+        <h2>🎓 Student Dashboard</h2>
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Assignments</a>
+        <a href="#">Profile</a>
+      </nav>
+    </header>
+
+    <!-- Dashboard -->
+
+    <div class="dashboard">
+      <!-- Sidebar -->
+
+      <aside class="sidebar">
+        <img src="assets/images/student-image.png" alt="Student" />
+
+        <h3>Vasu</h3>
+
+        <p>Computer Science</p>
+
+        <ul>
+          <li>🏠 Dashboard</li>
+
+          <li>📚 Courses</li>
+
+          <li>📝 Assignments</li>
+
+          <li>📊 Results</li>
+
+          <li>⚙ Settings</li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+
+      <main class="content">
+        <!-- Welcome -->
+
+        <section class="welcome">
+          <h1>Welcome Back, Vasu 👋</h1>
+
+          <p>Continue your learning journey and complete today's tasks.</p>
+        </section>
+
+        <!-- Stats -->
+
+        <section class="stats">
+          <div class="card">
+            <h2>6</h2>
+
+            <p>Courses</p>
+          </div>
+
+          <div class="card">
+            <h2>12</h2>
+
+            <p>Assignments</p>
+          </div>
+
+          <div class="card">
+            <h2>92%</h2>
+
+            <p>Attendance</p>
+          </div>
+
+          <div class="card">
+            <h2>8.7</h2>
+
+            <p>CGPA</p>
+          </div>
+        </section>
+
+        <!-- Courses -->
+
+        <section class="courses">
+          <h2>My Courses</h2>
+
+          <div class="course-container">
+            <div class="course-card">
+              <h3>HTML</h3>
+
+              <p>Learn the basics of web pages.</p>
+
+              <button>View</button>
+            </div>
+
+            <div class="course-card">
+              <h3>CSS</h3>
+
+              <p>Design beautiful websites.</p>
+
+              <button>View</button>
+            </div>
+
+            <div class="course-card">
+              <h3>JavaScript</h3>
+
+              <p>Add interactivity to websites.</p>
+
+              <button>View</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Activities -->
+
+        <section class="activity">
+          <h2>Recent Activities</h2>
+
+          <ul>
+            <li>✅ HTML Assignment Submitted</li>
+
+            <li>📢 CSS Live Class Tomorrow</li>
+
+            <li>📄 JavaScript Notes Uploaded</li>
+
+            <li>🎯 Mock Test on Friday</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

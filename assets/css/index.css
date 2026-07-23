@@ -20,10 +20,6 @@
   padding: 0;
 }
 
-html {
-  color-scheme: dark;
-}
-
 body {
   background: var(--bg);
   color: var(--text);

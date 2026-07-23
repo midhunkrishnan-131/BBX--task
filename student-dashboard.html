@@ -3,144 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Dashboard</title>
+    <title>Student Profile Dashboard</title>
 
-    <link rel="stylesheet" href="assets/css/student-dashboard.css" />
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
-    <!-- Header -->
 
-    <header class="header">
-      <div class="logo">
-        <h2>🎓 Student Dashboard</h2>
-      </div>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/student-dashboard.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header>
+      <h1>Student Profile Dashboard</h1>
 
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Courses</a>
-        <a href="#">Assignments</a>
-        <a href="#">Profile</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+
+          <li><a href="#">Courses</a></li>
+
+          <li><a href="#">About</a></li>
+
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <!-- Dashboard -->
+    <!-- ================= MAIN ================= -->
 
-    <div class="dashboard">
-      <!-- Sidebar -->
+    <main class="container">
+      <!-- ================= PROFILE CARD ================= -->
 
-      <aside class="sidebar">
-        <img src="assets/images/student-image.png" alt="Student" />
+      <section class="profile-section">
+        <div class="profile-card">
+          <span class="badge">New</span>
 
-        <h3>Vasu</h3>
+          <img src="images/student.png" alt="Student" />
 
-        <p>Computer Science</p>
+          <h2>Alfiya S</h2>
 
-        <ul>
-          <li>🏠 Dashboard</li>
+          <h4>Computer Science Student</h4>
 
-          <li>📚 Courses</li>
+          <p>
+            Passionate about Web Development and creating responsive websites
+            using HTML, CSS and JavaScript.
+          </p>
 
-          <li>📝 Assignments</li>
+          <button>View Profile</button>
+        </div>
+      </section>
 
-          <li>📊 Results</li>
+      <!-- ================= NOTIFICATIONS ================= -->
 
-          <li>⚙ Settings</li>
-        </ul>
-      </aside>
+      <section class="notification-section">
+        <h2>Latest Notifications</h2>
 
-      <!-- Main Content -->
+        <div class="notification-box">
+          <p>📢 HTML Assignment Submission - Friday</p>
+          <p>📢 CSS Practical Exam - Monday</p>
+          <p>📢 JavaScript Workshop Registration Open</p>
+          <p>📢 Placement Training Starts Tomorrow</p>
+          <p>📢 React Bootcamp Coming Soon</p>
+          <p>📢 Internal Marks Published</p>
+          <p>📢 Attendance Updated</p>
+          <p>📢 New Coding Challenge Available</p>
+          <p>📢 Hackathon Registration Open</p>
+          <p>📢 Project Review Next Week</p>
+        </div>
+      </section>
 
-      <main class="content">
-        <!-- Welcome -->
+      <!-- ================= COURSE TITLE ================= -->
 
-        <section class="welcome">
-          <h1>Welcome Back, Vasu 👋</h1>
+      <section class="course-section">
+        <h2>Long Course Title</h2>
 
-          <p>Continue your learning journey and complete today's tasks.</p>
-        </section>
+        <div class="course-box">
+          HTML • CSS • JavaScript • Bootstrap • React • Node.js • Express •
+          MongoDB • Python • Django • Responsive Web Development • UI/UX • Git &
+          GitHub • Portfolio Development
+        </div>
+      </section>
+      <!-- ================= FEATURES ================= -->
 
-        <!-- Stats -->
+      <section class="features-section">
+        <h2>Features</h2>
 
-        <section class="stats">
-          <div class="card">
-            <h2>6</h2>
-
-            <p>Courses</p>
+        <div class="features-container">
+          <div class="feature-card">
+            <h3>Online Classes</h3>
+            <p>Attend live classes from anywhere with interactive learning.</p>
           </div>
 
-          <div class="card">
-            <h2>12</h2>
-
-            <p>Assignments</p>
+          <div class="feature-card">
+            <h3>Assignments</h3>
+            <p>Submit assignments online and track your progress easily.</p>
           </div>
 
-          <div class="card">
-            <h2>92%</h2>
-
-            <p>Attendance</p>
+          <div class="feature-card">
+            <h3>Placements</h3>
+            <p>
+              Get placement updates, interview schedules and career guidance.
+            </p>
           </div>
+        </div>
+      </section>
 
-          <div class="card">
-            <h2>8.7</h2>
+      <!-- ================= GALLERY ================= -->
 
-            <p>CGPA</p>
-          </div>
-        </section>
+      <section class="gallery-section">
+        <h2>Gallery</h2>
 
-        <!-- Courses -->
+        <div class="gallery-container">
+          <div class="gallery-box">Image 1</div>
+          <div class="gallery-box">Image 2</div>
+          <div class="gallery-box">Image 3</div>
+          <div class="gallery-box">Image 4</div>
+          <div class="gallery-box">Image 5</div>
+          <div class="gallery-box">Image 6</div>
+        </div>
+      </section>
 
-        <section class="courses">
-          <h2>My Courses</h2>
+      <!-- ================= ARTICLES ================= -->
 
-          <div class="course-container">
-            <div class="course-card">
-              <h3>HTML</h3>
+      <section class="article-section">
+        <h2>Latest Articles</h2>
 
-              <p>Learn the basics of web pages.</p>
+        <div class="article-box">
+          <p>
+            Web development is one of the fastest-growing careers in the
+            technology industry. Learning HTML, CSS and JavaScript builds a
+            strong foundation for becoming a Frontend or Full Stack Developer.
+          </p>
 
-              <button>View</button>
-            </div>
+          <p>
+            Consistent practice, building projects and learning Git & GitHub are
+            essential skills for every student. Creating responsive websites
+            helps improve your coding knowledge and prepares you for real-world
+            development.
+          </p>
 
-            <div class="course-card">
-              <h3>CSS</h3>
+          <p>
+            Modern frameworks such as React, Angular and Vue make web
+            applications faster, interactive and easier to maintain.
+            Understanding the basics before learning frameworks is always
+            recommended.
+          </p>
+        </div>
+      </section>
+    </main>
 
-              <p>Design beautiful websites.</p>
+    <!-- ================= HELP BUTTON ================= -->
 
-              <button>View</button>
-            </div>
+    <button class="help-btn">Help</button>
 
-            <div class="course-card">
-              <h3>JavaScript</h3>
+    <!-- ================= FOOTER ================= -->
 
-              <p>Add interactivity to websites.</p>
+    <footer>
+      <p>© 2026 Student Profile Dashboard | All Rights Reserved</p>
 
-              <button>View</button>
-            </div>
-          </div>
-        </section>
-
-        <!-- Activities -->
-
-        <section class="activity">
-          <h2>Recent Activities</h2>
-
-          <ul>
-            <li>✅ HTML Assignment Submitted</li>
-
-            <li>📢 CSS Live Class Tomorrow</li>
-
-            <li>📄 JavaScript Notes Uploaded</li>
-
-            <li>🎯 Mock Test on Friday</li>
-          </ul>
-        </section>
-      </main>
-    </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Support</a>
+      </div>
+    </footer>
   </body>
 </html>

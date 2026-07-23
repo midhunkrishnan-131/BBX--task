@@ -1,175 +1,383 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learning Hub</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduLearn - Online Learning Platform</title>
 
     <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/learnhub.css" />
-  </head>
+    <link rel="stylesheet" href="assets/css/learnhub.css">
+</head>
 
-  <body>
-    <!-- ================= HEADER ================= -->
+<body>
+
+    <!-- =========================
+            NAVIGATION
+    ========================== -->
 
     <header>
-      <div class="logo">
-        <img src="assets/images/learn-hub logo.png" alt="Logo" />
 
-        <h2>Learning Hub</h2>
-      </div>
+        <nav class="navbar">
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>EduLearn</h2>
+            </div>
 
-          <li><a href="#">Courses</a></li>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
 
-          <li><a href="#">About</a></li>
+            <div class="nav-buttons">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="signup-btn">Sign Up</a>
+            </div>
 
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+        </nav>
 
-      <button class="signup-btn">Sign Up</button>
     </header>
 
-    <!-- ================= MAIN ================= -->
+    <!-- =========================
+            HERO SECTION
+    ========================== -->
 
-    <div class="container">
-      <!-- Sidebar -->
+    <section class="hero">
 
-      <aside class="sidebar">
-        <h3>Quick Links</h3>
+        <div class="hero-content">
 
-        <ul>
-          <li><a href="#">Dashboard</a></li>
+            <span class="hero-tag">
+                #1 Online Learning Platform
+            </span>
 
-          <li><a href="#">My Courses</a></li>
-
-          <li><a href="#">Assignments</a></li>
-
-          <li><a href="#">Certificates</a></li>
-
-          <li><a href="#">Profile</a></li>
-
-          <li><a href="#">Settings</a></li>
-        </ul>
-      </aside>
-
-      <!-- Main Content -->
-
-      <main class="content">
-        <!-- HERO SECTION -->
-
-        <section class="hero">
-          <div class="hero-text">
-            <h1>Welcome to Learning Hub</h1>
+            <h1>
+                Learn New
+                <br>
+                Build Your Future
+            </h1>
 
             <p>
-              Build your programming skills with interactive courses, real-world
-              projects and expert guidance. Learn HTML, CSS, JavaScript, Python
-              and much more.
+                Master web development, programming,
+                UI/UX design, AI, cloud computing and more
+                with expert instructors and real-world
+                projects.
             </p>
 
-            <button>Start Learning</button>
-          </div>
+            <div class="hero-buttons">
 
-          <div class="hero-image">
-            <img src="assets/images/learn-hub.png" alt="Learning" />
-          </div>
-        </section>
+                <a href="#" class="primary-btn">
+                    Get Started
+                </a>
 
-        <!-- ABOUT -->
+                <a href="#" class="secondary-btn">
+                    Explore Courses
+                </a>
 
-        <section class="card">
-          <h2>About Us</h2>
-
-          <p>
-            Learning Hub is an online platform designed to help students master
-            programming and web development. We provide structured courses,
-            practical projects, interview preparation and career guidance to
-            help learners become industry-ready developers.
-          </p>
-        </section>
-
-        <!-- SERVICES -->
-
-        <section class="card">
-          <h2>Our Services</h2>
-
-          <div class="services">
-            <div class="service-box">
-              <h3>Live Classes</h3>
-
-              <p>Interactive sessions with mentors.</p>
             </div>
 
-            <div class="service-box">
-              <h3>Projects</h3>
+            <div class="hero-stats">
 
-              <p>Build real-world portfolio projects.</p>
+                <div class="stat">
+                    <h3>50K+</h3>
+                    <p>Students</p>
+                </div>
+
+                <div class="stat">
+                    <h3>150+</h3>
+                    <p>Courses</p>
+                </div>
+
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Online</p>
+                </div>
+
             </div>
 
-            <div class="service-box">
-              <h3>Mock Interviews</h3>
+        </div>
 
-              <p>Prepare for technical interviews.</p>
-            </div>
+        <div class="hero-image">
 
-            <div class="service-box">
-              <h3>Placement Support</h3>
+            <img src="assets/images/learnhub-hero.jpn.jpeg"
+                 alt="Online Learning Illustration">
 
-              <p>Resume building and job assistance.</p>
-            </div>
-          </div>
-        </section>
+        </div>
+        <!-- =========================
+            FEATURES SECTION
+    ========================== -->
 
-        <!-- ARTICLES -->
+    <section class="features" id="features">
 
-        <section class="card">
-          <h2>Latest Articles</h2>
-
-          <article>
-            <h3>How to Become a Frontend Developer</h3>
-
+        <div class="section-title">
+            <span>Why Choose Us</span>
+            <h2>Our Platform Features</h2>
             <p>
-              Learn HTML, CSS, JavaScript and React by building practical
-              projects consistently.
+                Everything you need to become a professional developer.
             </p>
-          </article>
+        </div>
 
-          <article>
-            <h3>Why Learn Python?</h3>
+        <div class="feature-container">
 
+            <div class="feature-card">
+                <i class="fa-solid fa-video"></i>
+                <h3>Live Classes</h3>
+                <p>
+                    Attend interactive live sessions with expert mentors.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Hands-on Projects</h3>
+                <p>
+                    Build real-world projects to strengthen your portfolio.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-certificate"></i>
+                <h3>Certificates</h3>
+                <p>
+                    Receive industry-recognized certificates after completion.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>
+                    Get help anytime from our dedicated support team.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            COURSES SECTION
+    ========================== -->
+
+    <section class="courses" id="courses">
+
+        <div class="section-title">
+            <span>Popular Courses</span>
+            <h2>Learn From Industry Experts</h2>
             <p>
-              Python is one of the easiest and most powerful programming
-              languages for beginners.
+                Choose from our most popular career-focused courses.
             </p>
-          </article>
+        </div>
 
-          <article>
-            <h3>Top Interview Tips</h3>
+        <div class="course-grid">
 
-            <p>
-              Practice coding daily, build projects, learn Git & GitHub and
-              improve communication skills.
-            </p>
-          </article>
-        </section>
-      </main>
-    </div>
+            <!-- Course 1 -->
+            <div class="course-card">
+                <img src="images/html-course.jpg" alt="HTML Course">
 
-    <!-- FOOTER -->
+                <div class="course-content">
+                    <!-- =========================
+            STATISTICS SECTION
+    ========================== -->
+
+    <section class="statistics">
+
+        <div class="stat-box">
+            <h2>50K+</h2>
+            <p>Students Enrolled</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>150+</h2>
+            <p>Professional Courses</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>100+</h2>
+            <p>Expert Instructors</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>98%</h2>
+            <p>Success Rate</p>
+        </div>
+
+    </section>
+
+    <!-- =========================
+            TESTIMONIALS
+    ========================== -->
+
+    <section class="testimonials" id="testimonials">
+
+        <div class="section-title">
+            <span>Testimonials</span>
+            <h2>What Our Students Say</h2>
+            <p>Thousands of learners trust EduLearn.</p>
+        </div>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial-card">
+                <img src="images/student1.jpg" alt="Student">
+
+                <h3>Rahul Kumar</h3>
+
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>
+                    Excellent platform! The instructors are
+                    knowledgeable and the projects helped me
+                    get my first developer job.
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/student2.jpg" alt="Student">
+
+                <h3>Anjali Sharma</h3>
+
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>
+                    Very well-structured courses with amazing
+                    support from mentors. Highly recommended.
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+                <img src="images/student3.jpg" alt="Student">
+
+                <h3>Arjun Nair</h3>
+
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <p>
+                    I learned HTML, CSS and JavaScript here.
+                    Now I'm working as a Front-End Developer.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            CALL TO ACTION
+    ========================== -->
+
+    <section class="cta">
+
+        <h2>Start Learning Today</h2>
+
+        <p>
+            Join thousands of students and begin your journey
+            toward becoming a professional developer.
+        </p>
+
+        <a href="#" class="cta-btn">
+            Join Now
+        </a>
+
+    </section>
+
+    <!-- =========================
+            FOOTER
+    ========================== -->
 
     <footer>
-      <p>© 2026 Learning Hub | All Rights Reserved</p>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>EduLearn</h2>
+
+                <p>
+                    Learn modern technologies from industry experts
+                    through interactive online courses.
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>Email: info@edulearn.com</p>
+
+                <p>Phone: +91 98765 43210</p>
+
+                <p>Kerala, India</p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 EduLearn. All Rights Reserved.
+            </p>
+
+        </div>
+
     </footer>
-  </body>
+
+</body>
 </html>
+
+    </section>

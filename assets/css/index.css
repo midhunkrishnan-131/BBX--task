@@ -155,13 +155,15 @@ h1 .cursor {
   will-change: transform;
 }
 
-.card:nth-child(5) {
-  grid-column: 1 / -1;
-  max-width: calc(50% - 10px);
-  margin: 0 auto;
+.card:nth-child(5),
+.card:nth-child(6) {
+  grid-column: span 1;
+  max-width: 100%;
+  margin: 0;
+}
 }
 
-.card::before {
+.card:before {
   content: "";
   position: absolute;
   inset: 0;

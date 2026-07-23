@@ -15,9 +15,7 @@
   <body>
     <div class="wrap">
       <header>
-        <div class="eyebrow">
-          <span class="dot"></span>root@midhun:~/projects$ ls -la
-        </div>
+       
         <h1>BBX_TASKS<span class="cursor"></span></h1>
         <p class="subtitle">
           <span class="count">5</span> projects found — select one to view
@@ -41,10 +39,7 @@
         </article>
 
         <article class="card" style="--i: 1">
-          <div class="card-bar">
-            <span class="card-path">~/projects/facebook.html</span>
-            <span class="card-status"><span class="dot"></span>READY</span>
-          </div>
+         
           <div class="card-body">
             <span class="tag">social clone</span>
             <h2>Facebook</h2>
@@ -56,10 +51,7 @@
         </article>
 
         <article class="card" style="--i: 2">
-          <div class="card-bar">
-            <span class="card-path">~/projects/learnhub.html</span>
-            <span class="card-status"><span class="dot"></span>READY</span>
-          </div>
+         
           <div class="card-body">
             <span class="tag">e-learning</span>
             <h2>LearnHub</h2>
@@ -71,10 +63,7 @@
         </article>
 
         <article class="card" style="--i: 3">
-          <div class="card-bar">
-            <span class="card-path">~/projects/simple-page.html</span>
-            <span class="card-status"><span class="dot"></span>READY</span>
-          </div>
+          
           <div class="card-body">
             <span class="tag">starter demo</span>
             <h2>Simple Page</h2>
@@ -86,10 +75,7 @@
         </article>
 
         <article class="card" style="--i: 4">
-          <div class="card-bar">
-            <span class="card-path">~/projects/dashboard.html</span>
-            <span class="card-status"><span class="dot"></span>READY</span>
-          </div>
+          
           <div class="card-body">
             <span class="tag">dashboard</span>
             <h2>Student Dashboard</h2>
@@ -104,34 +90,6 @@
       <footer><span class="dot"></span>5 processes · all systems ready</footer>
     </div>
 
-    <script>
-      document.querySelectorAll(".card").forEach((card) => {
-        card.addEventListener("mousemove", (e) => {
-          const r = card.getBoundingClientRect();
-          card.style.setProperty(
-            "--mx",
-            ((e.clientX - r.left) / r.width) * 100 + "%",
-          );
-          card.style.setProperty(
-            "--my",
-            ((e.clientY - r.top) / r.height) * 100 + "%",
-          );
-        });
-      });
-
-      document.querySelectorAll("[data-ripple]").forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          const r = btn.getBoundingClientRect();
-          const ripple = document.createElement("span");
-          ripple.className = "ripple";
-          const size = Math.max(r.width, r.height);
-          ripple.style.width = ripple.style.height = size + "px";
-          ripple.style.left = e.clientX - r.left - size / 2 + "px";
-          ripple.style.top = e.clientY - r.top - size / 2 + "px";
-          btn.appendChild(ripple);
-          ripple.addEventListener("animationend", () => ripple.remove());
-        });
-      });
-    </script>
+   
   </body>
 </html>
